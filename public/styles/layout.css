@@ -15,9 +15,19 @@ html {
  */
 
 body {
-  color: #545149;
+  color: #101010;
   background-color: #f4f1ec;
   font-size: 24px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Bungee', cursive;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: #f4f1ec;
 }
 
 /*
