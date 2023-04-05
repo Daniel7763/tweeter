@@ -21,4 +21,10 @@ This repository is the starter code for the project: Students will fork and clon
 - Jquery ^3.6.4
 - Md5 ^2.1.0
 
+## Final Product
+
+!["Screenshot of Tweeter Homepage"](https://github.com/Daniel7763/tweeter/blob/master/docs/homepage.png?raw=true)
+!["screen shot of Tweeter Error message"](https://github.com/Daniel7763/tweeter/blob/master/docs/error.png?raw=true)
+!["Screenshot of Tweeter compressed"](https://github.com/Daniel7763/tweeter/blob/master/docs/compress.png?raw=true)
+
 
