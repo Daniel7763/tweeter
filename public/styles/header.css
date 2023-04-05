@@ -3,11 +3,43 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 120px; 
-  height: 520px;
+  padding-top: 150px; 
+  height: 400px;
   width: 100%;
-  color: #545149;
-  background-color: #ffffff;
-  background-color: #ffffff;
-background-image: url(https://www.transparenttextures.com/patterns/black-thread-light.png);
+  background-color: #f59315;
+  background-image: url(https://www.transparenttextures.com/patterns/black-thread-light.png);
+}
+
+.name{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.profile-header-image {
+  width: 220px;
+  margin-top: -30px;
+}
+
+@media (min-width: 1024px) {
+  .mainHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 170px; 
+    height: 250px;
+    width: 25%;
+    color: #545149;
+   background-image: url(https://www.transparenttextures.com/patterns/black-thread-light.png);
+   min-width: 350px;
+   min-height: 440px;
+   max-width: 400px;
+   max-height: 470px; 
+  };
+
+  .profile-header-image {
+    width: 20px;
+    margin-top: -30px;
+  }
+
 }

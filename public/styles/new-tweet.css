@@ -1,12 +1,14 @@
 .new-tweet {
-display: flex; 
-flex-direction: column;
-align-items: center;
-margin-bottom: 1.5em;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5em;
+  margin-top: 30px;
 }
 
-.new-tweet h2 {
-  width: 75%;
+.announce-tweet {
+  display: flex;
+  justify-content: center;
 }
 
 form {
@@ -16,12 +18,11 @@ form {
 }
 
 .tweet-text {
-border-style: hidden;
-border-bottom: 5px solid  #545149; 
-/* background-color: #f4f1ec; */
-resize: none; 
-font-weight: 500; 
-line-height: 1;
+  border-style: hidden;
+  border-bottom: 5px solid  #545149; 
+  resize: none; 
+  font-weight: 500; 
+  line-height: 1;
 }
 
 .tweet-submit-counter{
@@ -45,3 +46,31 @@ button {
   float: right; 
 }
 
+.error {
+  border-color: red;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+  height: 50px;
+  border-width: 5px;
+  color: red;
+  border-style: solid;
+  display: none;
+  width: 75%;
+}
+
+@media (min-width: 1024px) {
+  .new-tweet {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5em;
+    padding-top: 50px;
+    width: 60vw;
+  }
+
+  .new-tweet h2 {
+    width: 60vw;
+  }
+  
+}

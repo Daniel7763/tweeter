@@ -22,17 +22,17 @@
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
     <link rel="stylesheet" href="/styles/tweet-timeline.css" type="text/css" />
 
+    <!-- timeago -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   </head>
 
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
-
       <div class = "navLeft">
-        <p>Tweeter</p>
+        <p class="nav-title"> Tweeter </p>
       </div>
-      
       <div class='navRight'>
         <p>
           <b>Write</b> a new tweet
@@ -41,16 +41,14 @@
           <i class="fa-solid fa-angles-down"></i>
         </button>
       </div>
-
     </nav>
 
     <header class = "mainHeader">
       <div>
-        <img src="/images/profile-hex.png"> 
+        <img class="profile-header-image" src="/images/ghost.png"> 
       </div>
-      <br>
       <div>
-        <h2> <b>Daniel</b> Soares</h2>
+        <h2 class="name"> <b>Daniel</b> Soares</h2>
       </div>
     </header>
 
@@ -59,7 +57,11 @@
     <!-- tweet input -->
     <main class="container">
       <section class="new-tweet">
-        <h2>Tweet to the world!</h2>
+        <!-- <h2 class="announce-tweet">Tweet to the world!</h2> -->
+
+        <!-- sliding error message -->
+        <div class="error"> </div>
+
         <form action="/tweets" method="POST" id="submit-tweet">
           <label for="tweet-text"></label>
           <textarea name="text" class="tweet-text" id="tweet-text" placeholder="What are you humming about?"></textarea>
@@ -72,42 +74,8 @@
 
       <!-- tweet container/timeline -->
       <section class = "tweet-container" id = "tweet-timeline" >
-        <article class="tweet">
-
-          <header>
-            <section class="content-header">
-              <p class="avatar-name">
-                <img class="content-user-pic" src="images/profile-hex.png"/> The Mailman
-              </p>
-              <p class="handle">
-                @LetterH3ER0
-              </p>
-            </section>
-          </header>
-
-          <div class="content-body">
-            Paper-cut myself again...
-          </div>
-
-          <footer>
-            <section class="content-footer">
-              <p class="timestamp">
-                5 hours ago
-              </p>
-              <p class="Options">
-                <i class="icon fa-solid fa-flag"></i>
-                <i class="icon fa-solid fa-retweet"></i>
-                <i class="icon fa-solid fa-heart"></i>
-              </p>
-            </section>
-          </footer>
-
-        </article>
       </section>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
-
-        <p> BIGFOOT FOREST </p>
     </main>
 
   </body>
