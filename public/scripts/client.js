@@ -36,6 +36,8 @@ $(document).ready(function() {
       success:function() {
         loadTweets();
         console.log("success");
+        //code to clear tweet-text field after submitting a successful tweet
+        $('#tweet-text').val('');
       },
       error: function() {
         console.log("error");

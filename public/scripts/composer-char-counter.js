@@ -1,6 +1,7 @@
 //responsible for character counter of tweet input form
 $(document).ready(function() {
-  $('#tweet-text').on('keyup', function() {
+  //used keydown to better track counter without having to lift key
+  $('#tweet-text').on('keydown', function() {
 
     //establish max/min & current count/remaining characters
     const maxCount = 140;
