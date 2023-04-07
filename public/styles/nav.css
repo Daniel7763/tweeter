@@ -45,3 +45,13 @@ nav {
 .nav-title {
   font-size: 35px;
 }
+
+@media (max-width: 1023px) {
+  nav{
+    background-color: transparent
+  }
+
+  .nav-new-tweet{
+    background-color: transparent
+  }
+}

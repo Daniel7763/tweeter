@@ -11,13 +11,14 @@
 }
 
 .name{
-  margin-top: 0px;
+  margin-top: 20px;
   margin-bottom: 0px;
+  font-family: 'Bungee', sans-serif;
 }
 
 .profile-header-image {
   width: 220px;
-  margin-top: -30px;
+  margin-top: -150px;
 }
 
 @media (min-width: 1024px) {
@@ -34,7 +35,9 @@
    min-width: 350px;
    min-height: 440px;
    max-width: 400px;
-   max-height: 470px; 
+   max-height: 470px;
+   /* margin-left: 5%; */
+   margin-top: 90px;
   };
 
   .profile-header-image {

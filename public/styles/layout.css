@@ -10,7 +10,7 @@ body {
   background-color: #f4f1ec;
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
-  font-family: 'Bungee', cursive;
+  /* font-family: 'Bungee', cursive; */
 }
 
 main {
@@ -31,12 +31,14 @@ main {
   
   body {
     display: flex;
+    justify-content: space-around;
     flex-direction: row;
     color: #101010;
     background-color: #f4f1ec;
     font-size: 24px;
     font-family: 'Source Sans Pro', sans-serif;
-    font-family: 'Bungee', cursive;
+    /* font-family: 'Bungee', cursive; */
+    width: 100%;
   }
   
   main {
@@ -44,8 +46,9 @@ main {
     flex-direction: column;
     align-items: center;
     padding-top: 100px;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 0%;
+    width: 60%;
+    margin-right: 0%;
     background-color: #f4f1ec;
   }
 }

@@ -15,6 +15,13 @@ $(document).ready(function() {
       return $('.error')
         .text('🙈 Nothing entered in text box. 🙈')
         .slideDown("fast","linear");
+      // setTimeout(() =>{
+      //   //error slide up
+      //   $('div.error')
+      //     .text('')
+      //     .slideUp();
+      // }, 2000);
+      // return;
     }
     if ($('#tweet-text').val().length > 140) {
       return $('.error')
@@ -36,8 +43,10 @@ $(document).ready(function() {
       success:function() {
         loadTweets();
         console.log("success");
-        //code to clear tweet-text field after submitting a successful tweet
+        //clear tweet-text field after tweet submit success
         $('#tweet-text').val('');
+        //return counter to 140 after tweet submit success
+        $('.counter').text('140');
       },
       error: function() {
         console.log("error");

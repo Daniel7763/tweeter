@@ -1,11 +1,11 @@
 //responsible for character counter of tweet input form
 $(document).ready(function() {
   //used keydown to better track counter without having to lift key
-  $('#tweet-text').on('keydown', function() {
+  $('#tweet-text').on('input', function() {
 
     //establish max/min & current count/remaining characters
     const maxCount = 140;
-    const minCount = -1;
+    const minCount = 0;
     const currentCount = $(this).val().length;
     const remainingLetters = maxCount - currentCount;
 
@@ -14,10 +14,14 @@ $(document).ready(function() {
     
     //Make the counter red for negative numbers
     counterElement.text(remainingLetters);
-    if (remainingLetters <= minCount) {
+    if (remainingLetters < minCount) {
       counterElement.css('color', 'red');
     } else {
       counterElement.css('color', 'black');
+      //error slide up
+      $('div.error')
+        .text('')
+        .slideUp();
     }
   });
 });
